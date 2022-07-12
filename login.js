@@ -1,17 +1,21 @@
 // form validation starts
-function validate(){
-    var username=document.getElementById("username").value;
+function confirm(run){
+    var username=document.getElementById("name").value;
     var password=document.getElementById("password").value;
     if(username=="admin"&&password=="12345"){
-       alert("Login successfully");
-       
-       return true;
+        alert("Login successfully");
+        run();
+        return true;
     }
-        
     else{
-        alert("Login failed");   
+        
         return false;
+        alert("Login failed");
     }
 }
+function run(){
+    window.location.href="./todo.html"
+}
+confirm(run);
 
-// form validation ends
+

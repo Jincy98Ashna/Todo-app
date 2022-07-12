@@ -12,17 +12,27 @@
 </head>
 <body>
     <!-- form starts -->
-    <form class="box" action="todo.html" method="POST">
-        <h1>
-            Login
-        </h1>
-        <input type="text" name="" placeholder="Enter Username" id="username">
-        <input type="password" name="" placeholder="Enter password" id="password">
-        <input type="submit" name="" value="Login" onclick="(validate())" >
-        
-        
+    <form action="./todo.html" onsubmit="return confirm()">
+        <div class="mb-3">
+            <h1>Login</h1>
+            <br>
+            <label for="">Username</label>
+            <br>
+            <input type="text" placeholder="Enter username" class="form-control" id="name">
+        </div>
+        <br>
+
+        <div class="mb-3">
+            <label for="">Password</label>
+            <br>
+            <input type="password" placeholder="Enter password" class="form-control" id="password">
+        </div>
+        <br>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
     </form>
-    
       <!-- form ends -->
       <script src="./login.js"></script>
 
