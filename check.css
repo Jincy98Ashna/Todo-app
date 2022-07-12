@@ -1,0 +1,18 @@
+.container{
+    height: 200px;
+    width:200px;
+    margin:100px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+input[type="checkbox"]{
+    margin-left: 500%;
+    position:relative;
+}
+.selectALL-option{
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+}
